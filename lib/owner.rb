@@ -21,7 +21,7 @@ class Owner
   end
   
   def self.count
-    self.all.size
+    self.all.count
   end 
   
   def say_species 
@@ -61,6 +61,6 @@ class Owner
   end
   
   def list_pets
-    
+    "I have #{self.pets[:fishes].count} fish, "
   end
 end
