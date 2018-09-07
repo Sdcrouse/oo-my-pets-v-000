@@ -53,7 +53,10 @@ class Owner
   end 
   
   def sell_pets 
-    self.pets.each{|pet_type, pet_array| pet_array.clear}
+    self.pets.each do |pet_type, pet_array| 
+      pet_array.each {|pet| pet.mood = "nervous"}
+      pet_array.clear
+    end
     #binding.pry
   end
 end
