@@ -59,4 +59,8 @@ class Owner
     end
     #binding.pry
   end
+  
+  def list_pets
+    
+  end
 end
